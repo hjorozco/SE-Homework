@@ -1,0 +1,64 @@
+html {
+    margin: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: lightcyan;
+    font-family: "Arial", Gadget, sans-serif;
+}
+
+h2, h3, h4 {
+    color: blueviolet;
+}
+        
+p {
+    color: saddlebrown;
+    font-family: cursive;
+}
+
+#image_container {
+    position: relative;
+    width:290px;
+    height:300px;
+}
+
+#top_left_text {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+#home_page_link {
+    color: blueviolet;
+    background-color: lightsteelblue;
+}
+
+#comments {
+    font-style: italic;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    left: 45px;
+    padding: 5px;
+    background-color: lightsteelblue;
+}
+
+.inline {
+    display: inline;
+}
+
+.button {
+  background-color: saddlebrown;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
