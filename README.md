@@ -1,4 +1,5 @@
 # SE-Homework
 
-Software Engineer homework.
+Software Engineer Per Scholas homework.
+
 Hector J. Orozco
