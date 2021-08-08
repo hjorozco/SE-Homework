@@ -3,7 +3,7 @@ Functions in JavaScript.
 <br/><br/>
 
 **All functions on the solutions are one-line arrow functions (which means no curly brackets and** 
-**no explicit use of the return keyword)**
+**no explicit use of the return keyword).**
 
 Solution to the homework problems are grouped into 4 JavaScript files.
 1. **Week2_HW2_Functions_(5).js** contains solution to problem 5, which deals with function arguments.
