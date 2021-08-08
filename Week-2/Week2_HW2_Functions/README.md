@@ -1,5 +1,6 @@
 #### Week2_HW2_Functions ####
-Per Scholas. Software Engineer program.&nbsp;&nbsp;
+Per Scholas. Software Engineer program.
+<br/><br/>
 
 **All functions on the solutions are one-line arrow functions (which means no curly brackets and** 
 **no explicit use of the return keyword)**
