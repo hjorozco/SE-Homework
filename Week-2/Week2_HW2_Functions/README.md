@@ -1,5 +1,5 @@
 #### Week2_HW2_Functions ####
-Per Scholas. Software Engineer program.
+Functions in JavaScript.
 <br/><br/>
 
 **All functions on the solutions are one-line arrow functions (which means no curly brackets and** 
