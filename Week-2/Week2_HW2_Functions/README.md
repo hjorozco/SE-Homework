@@ -13,6 +13,7 @@ with Arrays.
 with Numbers.
 4. **Week2_HW2_Functions_Strings_(3,6).js** contains solution to problems 3 and 6, which deals 
 with Strings.
+<br/><br/>
 
 - - - -
 
