@@ -5,6 +5,9 @@ Functions in JavaScript.
 **All functions on the solutions are one-line arrow functions (which means no curly brackets and** 
 **no explicit use of the return keyword).**
 
+None of this JavaScript programs ask for user input. If you want to user different values for the 
+functions arguments, you will need to modify those values on the JavaScript code.
+
 Solution to the homework problems are grouped into 4 JavaScript files.
 1. **Week2_HW2_Functions_(5).js** contains solution to problem 5, which deals with function arguments.
 2. **Week2_HW2_Functions_Arrays_(4,7,8).js** contains solution to problems 4, 7 and 8, which deals 
