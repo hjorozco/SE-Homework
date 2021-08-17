@@ -32,7 +32,7 @@ function processUserRequest(event) {
 
 
 /**
- * Fetchs the data from the NYC Open Data API endpoint
+ * Fetches the data from the NYC Open Data API endpoint
  * 
  * @param {Number} limit The number of complaints that will be fetched
  * @param {String} borough The name of the borough from which the complaints will be fetched
