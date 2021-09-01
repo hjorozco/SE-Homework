@@ -1,0 +1,103 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Grid {
+  /* Blue Grey 800 */
+  width: 1100px;
+  height: 700px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  border-radius: 10px;
+  background-color: #37474F;
+  font-size: small;
+}
+
+.Cell {
+  /* Blue Grey 900 */
+  background-color: #263238;
+  /* Blue Grey 200 */
+  color: #B0BEC5;
+  margin: 10px;
+  overflow: auto;
+  border-radius: 10px;
+}
+
+.Menu {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  /* Blue Grey 800 */
+  background-color: #37474F;
+}
+
+.Top {
+  margin-top: 60px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.Bottom {
+  grid-row: 2 / 4;
+  grid-column: 2 / 5;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.MenuItems {
+  list-style-type: none;
+  margin-left: 40px;
+  padding: 0px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.MenuItem {
+  margin: 40px;
+}
+
+.MenuItem:hover {
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.Value {
+  font-size: xxx-large;
+  margin-left: 20px;
+  color: white;
+}
+
+.Values {
+  margin-left: 20px;
+  color: white;
+  font-size: large;
+}
+
+.Description {
+  margin-left: 20px;
+  font-size: small;
+  /* Blue Grey 200 */
+  color: #B0BEC5;
+}
+
+.GraphContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.Graph{
+  height: 300px;
+}
