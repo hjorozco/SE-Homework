@@ -23,7 +23,7 @@ When clicking on one of the texts displayed inside of the innermost containers, 
 
 I built a static version of the app that renders the previous data model.
 
-For that purpose I built a React Class component for each of the components on the previous hierarchy (*App*, *DivOne*, *DivTwo* and *DivThree*).
+For that purpose I created a React Class component for each of the components on the previous hierarchy (*App*, *DivOne*, *DivTwo* and *DivThree*).
 
 On *index.js* I created a constant with the text to display, and passed it using *props* to its child *App* component, and from there down on the hierarchy to *DivThree* using *props* too. *DivThree* displays the text inside an *h3* HTML tag. I understand that that constant can be placed on the innermost component (*DivThree*),
 but for the purpose of practicing I am using props to pass it from parent to child.
