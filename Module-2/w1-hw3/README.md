@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+#### w1 - hw3 - (T.A.R.D.I.S) ####
+Using ***React Class Components***. 
+The purpose of this homework is to let me understand the way React Class Components work and 
+interact with each other on a application.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+----
+***[THINKING IN REACT](https://reactjs.org/docs/thinking-in-react.html)***
 
-## Available Scripts
+**Start With A Mock**
 
-In the project directory, you can run:
+![W1-HW3 Final product](./w1-hw3-screenshot.png "W1-HW3 Final product")
 
-### `yarn start`
+When clicking on one of the texts displayed inside of the innermost containers, the text has to update from uppercase to lowercase or visceversa. Each text should update independently.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Step 1: Break The UI Into A Component Hierarchy**
+- App
+  - DivOne
+    - DivTwo
+      - DivThree
+      - DivThree
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Step 2: Build A Static Version in React**
 
-### `yarn test`
+I build a static version of the app that renders the previous data model.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For that purpose I build a React Class component for each of the components on the previous hierarchy (*App*, *DivOne*, *DivTwo* and *DivThree*).
 
-### `yarn build`
+On *index.js* I created a constant with the text to display, and passed it using *props* to its child *App* component, and from there down on the hierarchy to *DivThree* using *props* too. *DivThree* displays the text inside an *h3* HTML tag. I understand that that constant can be placed on the innermost component (*DivThree*),
+but for the purpose of practicing I am using props to pass it from parent to child.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I did not use *state* on this step since state is reserved for interactivity, that is, data that changes over time. Since this is a static version of the app, I didn't need it.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Step 3: Identify The Minimal (but complete) Representation Of UI State**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I identified two pieces of data used in this application:
+- The text that is displayed on the two innermost containers. *This text does not change over time and it is passed in as props, so it is not state.*
+- A flag that indicates if the text displayed is uppercase or lowercase. *This flag needs to change over time and can't be computed from anything, so **it is state**.*
 
-### `yarn eject`
+**Step 4: Identify Where Your State Should Live**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Since the innermost container (*DivThree*) is the only element that needs to keep track of its text's uppercase 
+or lowercase state, and this container does not need to communicate or pass data to other siblings or parent, 
+I will place the state on it.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Step 5: Add Inverse Data Flow**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+This app does not need to have inverse data flow since the innermost component (*DivThree*) is not sending
+any data to its parent or siblings. In more complex apps, inverse data flow can be achieved by passing callback functions as props, from parent to child elements. That way, the parent will be the only one that will update its own state. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
