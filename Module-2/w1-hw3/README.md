@@ -43,10 +43,12 @@ Since the innermost container (*DivThree*) is the only element that needs to kee
 or lowercase state, and this container does not need to communicate or pass data to other siblings or parent, 
 I will place the state on it.
 
+*DivThree* component's state consists of a boolan property named *caps*. *caps* value is changed from true to false and visceversa on click, and its value determines how the text is displayed. If it is true, the text is displayed in uppercase, if it is false, the text is displayed in lowercase.
+
 **Step 5: Add Inverse Data Flow**
 
 This app does not need to have inverse data flow since the innermost component (*DivThree*) is not sending
-any data to its parent or siblings. In more complex apps, inverse data flow can be achieved by passing callback functions as props, from parent to child elements. That way, the parent will be the only one that will update its own state. 
+any data to its parent or siblings. In more complex apps, inverse data flow can be achieved by passing callback functions as props, from parent to child elements.
 
 
 
