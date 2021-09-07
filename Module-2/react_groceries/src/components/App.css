@@ -1,0 +1,171 @@
+.App {
+  /* Cyan 200 */
+  background-color: #80DEEA;
+  width: 70vw;
+  height: 75vh;
+  margin: 40px;
+  border-radius: 10px;
+  display: grid;
+  grid-template: 50px 1fr / 60% 40%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.AppTitle {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-align: center;
+  grid-column: 1 / 3;
+}
+
+.Container {
+  border-radius: 10px;
+}
+
+.ListContainer {
+  grid-column: 1 / 2;
+  margin: 0px 10px 10px;
+  display: grid;
+  grid-template: 65px 1fr / 1fr;
+  overflow: auto;
+  /* Amber 200 */
+  background-color: #FFE082;
+}
+
+.AddItemContainer {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template: 65px 1fr / 1fr;
+  overflow: auto;
+}
+
+.ListFilter {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.ListFilterLabel1 {
+  margin-right: 10px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.ListFilterLabel2 {
+  margin-left: 10px;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+.List {
+  margin: 20px;
+  overflow: auto;
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  padding: 5px;
+}
+
+.FormContainer {
+  height: 100%;
+}
+
+.FormTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin: 20px;
+}
+
+.Form {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Input {
+  /* Cyan 50 */
+  background: #E0F7FA;
+  border-radius: 5px;
+  /* Cyan A700 */
+  border-color: #00B8D4;
+}
+
+.FormInput {
+  margin-bottom: 20px;
+}
+
+.FormInputQuantity {
+  width: 100px;
+}
+
+/* Remove Arrows from input number on Chrome, Safari, Edge, Opera */
+.FormInputQuantity::-webkit-outer-spin-button,
+.FormInputQuantity::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove Arrows from input number on Firefox */
+.FormInputQuantit[type=number] {
+  -moz-appearance: textfield;
+}
+
+.FormButtonsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.Button {
+  border-radius: 5px;
+  /* Cyan 900 */
+  border: 1px solid #006064;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 30px;
+  cursor: pointer;
+  color: black;
+}
+
+.SubmitButton {
+  /* Cyan 500 */
+  background-color: #00BCD4;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.SubmitButton:hover {
+  /* Cyan 600 */
+  background-color: #00ACC1;
+}
+
+.ResetButton {
+  /* Cyan 200 */
+  background-color: #80DEEA;
+}
+
+.ResetButton:hover {
+  /* Cyan 500 */
+  background-color: #4DD0E1;
+}
+
+.Button:active {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+@media (max-width:780px) {
+  .App {
+    width: 80vw;
+    height: 95vh;
+    margin: 20px;
+    display: grid;
+    grid-template: 50px 1fr 1fr / 1fr;
+  }
+  .AddItemContainer {
+    grid-row: 3 /4;
+  }
+}
