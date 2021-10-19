@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
 	private static Scanner scanner = new Scanner(System.in);
 
 	private static String name;
@@ -15,7 +14,6 @@ public class Main {
 	private static ArrayList<Person1> persons = new ArrayList<Person1>();
 
 	public static void main(String[] args) {
-
 		String optionString;
 		byte optionNumber = 0;
 		boolean validOption;

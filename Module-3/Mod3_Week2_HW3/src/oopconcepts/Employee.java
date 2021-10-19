@@ -1,7 +1,6 @@
 package oopconcepts;
 
 public class Employee extends Person implements PersonInterface {
-
 	private static int idGenerator = 0;
 
 	private int id;

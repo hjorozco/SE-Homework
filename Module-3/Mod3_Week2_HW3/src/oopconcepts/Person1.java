@@ -1,7 +1,6 @@
 package oopconcepts;
 
 public class Person1 {
-
 	private String name;
 	private String address;
 	private String phoneNumber;
